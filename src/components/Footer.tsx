@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export default function Footer() {
   return (
@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className="relative bg-gray-300 pt-20 pb-6">
         <div
           className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
-          style={{ transform: "translateZ(0)" }}
+          style={{ transform: 'translateZ(0)' }}
         >
           <svg
             className="absolute bottom-0 overflow-hidden"
@@ -28,14 +28,24 @@ export default function Footer() {
             <div className="w-full lg:w-6/12 px-4">
               <h4 className="text-3xl font-semibold">You can contact me at</h4>
               <h5 className="text-lg mt-0 mb-2 text-gray-700">
-                <a target="_blank" rel="noopener noreferrer" href="mailto:contact@rikukallio.fi">contact (at) rikukallio.fi</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto:contact@rikukallio.fi"
+                >
+                  contact (at) rikukallio.fi
+                </a>
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
                 <button
                   className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/riku-kallio-25079469">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://linkedin.com/in/riku-kallio-25079469"
+                  >
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </button>
@@ -43,7 +53,11 @@ export default function Footer() {
                   className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/richierock">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.github.com/richierock"
+                  >
                     <i className="fab fa-github"></i>
                   </a>
                 </button>
@@ -51,7 +65,11 @@ export default function Footer() {
                   className="bg-white text-red-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <a target="_blank" rel="noopener noreferrer" href="mailto:contact@rikukallio.fi">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="mailto:contact@rikukallio.fi"
+                  >
                     <i className="far fa-paper-plane"></i>
                   </a>
                 </button>
@@ -97,7 +115,8 @@ export default function Footer() {
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-gray-600 font-semibold py-1">
-                Built with react / typescript / tailwindcss © {new Date().getFullYear()} by{" "}
+                Built with react / typescript / tailwindcss ©{' '}
+                {new Date().getFullYear()} by{' '}
                 <a
                   href="https://rikukallio.fi"
                   className="text-gray-600 hover:text-gray-900"
@@ -111,5 +130,5 @@ export default function Footer() {
         </div>
       </footer>
     </>
-  );
+  )
 }

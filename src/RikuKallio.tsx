@@ -1,12 +1,12 @@
-import React from "react";
+import EducationSection from 'components/Education/EducationSection'
+import Intro from 'components/Intro'
+import Tech from 'components/Tech'
+import WorkExperienceSection from 'components/WorkExperience/WorkExperienceSection'
+import React from 'react'
 
+import Footer from './components/Footer'
 // Modules
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer";
-import WorkExperience from "components/WorkExperience";
-import Intro from "components/Intro";
-import Tech from "components/Tech";
-import Education from "components/Education";
+import Navbar from './components/Navbar/Navbar'
 
 const RikuKallio = () => {
   return (
@@ -20,10 +20,10 @@ const RikuKallio = () => {
           <Tech />
         </div>
         <div id="work">
-          <WorkExperience />
+          <WorkExperienceSection />
         </div>
         <div id="education">
-          <Education />
+          <EducationSection />
         </div>
       </main>
       <div id="footer">
