@@ -19,6 +19,7 @@ export interface WorkInfo {
   text: ReactNode
   duration: string
   techIconArray: string[]
+  extraIcons?: any[]
 }
 export interface WorkExperience {
   company: Company
@@ -60,8 +61,8 @@ export const workExperiences: WorkExperience[] = [
           'fab fa-react',
           'fas fa-cloud',
           'fab fa-node',
-          graphql,
         ],
+        extraIcons: [graphql],
       },
     ],
   },

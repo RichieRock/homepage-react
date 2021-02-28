@@ -70,7 +70,7 @@ const IntroSection = () => {
                         {getYears(experienceYears.programming)}
                       </span>
                       <span className="text-sm text-gray-500">
-                        Years of Programming experience
+                        Years of Programming
                       </span>
                     </div>
                     <div className="mr-4 p-3 text-center">

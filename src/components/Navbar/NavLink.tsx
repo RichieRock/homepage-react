@@ -4,15 +4,17 @@ interface NavLinkProps {
   link?: string
   text?: string
   iconClass?: string
+  clickCallback?: () => void
 }
 
-const NavLink = ({ link, text, iconClass }: NavLinkProps) => {
+const NavLink = ({ link, text, iconClass, clickCallback }: NavLinkProps) => {
   return (
     <li className="flex items-center">
       <a
         className="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
         rel="noopener noreferrer"
         href={link}
+        onClick={clickCallback}
         target="_blank"
       >
         <i

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { scrollTo } from '../util'
+
 export default function Footer() {
   return (
     <>
@@ -112,15 +114,19 @@ export default function Footer() {
             </div>
           </div>
           <hr className="my-6 border-gray-400" />
-          <div className="flex flex-wrap items-center md:justify-between justify-center">
+          <div className="flex flex-col flex-wrap items-center md:justify-between justify-center">
+            <button
+              className="bg-white text-indigo-600 hover:text-white hover:bg-black shadow-lg hover:shadow-inner font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mb-2"
+              type="button"
+              onClick={() => scrollTo('top')}
+            >
+              <i className="fas fa-chevron-up"></i>
+            </button>
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-gray-600 font-semibold py-1">
                 Built with react / typescript / tailwindcss ©{' '}
                 {new Date().getFullYear()} by{' '}
-                <a
-                  href="https://rikukallio.fi"
-                  className="text-gray-600 hover:text-gray-900"
-                >
+                <a href="." className="text-gray-600 hover:text-gray-900">
                   Riku Kallio
                 </a>
                 .

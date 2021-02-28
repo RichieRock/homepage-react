@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { WorkExperience, WorkInfo } from '../../data/workExperiences'
+import { TechIcon, WorkExperience, WorkInfo } from '../../data/workExperiences'
 import { scrollTo } from '../../util'
 
 interface ExperienceProps {
@@ -35,20 +35,30 @@ const ExperienceComponent = ({ workExperience }: ExperienceProps) => {
               {work.text}
             </p>
             <div className="mt-5">
-              {work.techIconArray.map((tech: string, index2: number) => (
+              {work.techIconArray.map((tech: TechIcon, index2: number) => (
                 <button
                   key={tech + '.' + index2}
                   className="bg-white text-gray-700 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 mb-2"
                   type="button"
                   onClick={() => scrollTo('tech')}
                 >
-                  {tech.startsWith('/static') ? (
-                    <img alt="" className="w-4 h-auto inline-flex" src={tech} />
-                  ) : (
-                    <i className={tech} />
-                  )}
+                  <i className={tech} />
                 </button>
               ))}
+              {work.extraIcons ? (
+                work.extraIcons.map((tech: string, index3: number) => (
+                  <button
+                    key={'extratech' + '.' + index3}
+                    className="bg-white text-gray-700 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 mb-2"
+                    type="button"
+                    onClick={() => scrollTo('tech')}
+                  >
+                    <img alt="" className="w-4 h-auto inline-flex" src={tech} />
+                  </button>
+                ))
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         ))}

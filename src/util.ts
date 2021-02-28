@@ -20,9 +20,10 @@ export const getYears = (
 export const scrollTo = (elementId: string) => {
   const element = document.querySelector('#' + elementId)
   if (element) {
-    scrollIntoView(element, { behavior: 'smooth', scrollMode: 'if-needed' })
-    /*if (this.sidebarVisible) {
-            this.sidebarClose();
-        }*/
+    scrollIntoView(element, {
+      behavior: 'smooth',
+      scrollMode: 'if-needed',
+      block: 'start',
+    })
   }
 }

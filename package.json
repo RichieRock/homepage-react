@@ -2,6 +2,7 @@
   "name": "homepage-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@fortawesome/fontawesome-free": "^5.15.2",
@@ -21,7 +22,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "lint": "eslint --ext .ts,.tsx src/"
+    "lint": "eslint --ext .ts,.tsx src/",
+    "deploy": "echo 'Building in development mode' && PUBLIC_URL=/portfolio yarn build && echo 'Deploying to kallio.website (remember to open the port)' && scp -P 9922 -r build/* richierock@kallio.website:/var/www/html/portfolio",
+    "deploy-prod": "echo 'Building in production mode' && yarn build --prod && echo 'Deploying to rikukallio.fi' && scp -r dist/* cafakfih@rikukallio.fi:/home3/cafakfih/public_html"
   },
   "eslintConfig": {
     "extends": [

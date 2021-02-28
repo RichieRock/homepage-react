@@ -12,7 +12,7 @@ const RikuKallio = () => {
   return (
     <>
       <Navbar transparent />
-      <main className="profile-page">
+      <main id="top" className="profile-page">
         <div id="intro">
           <Intro />
         </div>

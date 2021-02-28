@@ -6,15 +6,24 @@ interface NavItemProps {
   iconClass?: string
   scrollId?: string
   text?: string
+  clickCallback?: () => void
 }
 
-const NavItem = ({ iconClass, scrollId, text }: NavItemProps) => {
+const NavItem = ({
+  iconClass,
+  scrollId,
+  text,
+  clickCallback,
+}: NavItemProps) => {
   return (
     <li className="flex items-center">
       <button
         className="text-gray-800 lg:text-gray-300 lg:hover:text-white px-3 py-4 lg:py-2 text-xs font-bold uppercase rounded outline-none focus:outline-none lg:mr-1 lg:mb-0 ease-linear transition-all duration-150"
         type="button"
-        onClick={() => (scrollId ? scrollTo(scrollId) : null)}
+        onClick={() => {
+          scrollId ? scrollTo(scrollId) : null
+          clickCallback ? clickCallback() : null
+        }}
       >
         {iconClass ? (
           <span className="lg:hidden inline-block w-6">
