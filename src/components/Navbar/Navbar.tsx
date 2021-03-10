@@ -25,7 +25,7 @@ const Navbar = () => {
           </div>
           <div
             className={
-              "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
+              "z-10 lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
               (navbarOpen ? " block rounded shadow-lg" : " hidden")
             }
           >
