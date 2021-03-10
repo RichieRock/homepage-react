@@ -25,8 +25,9 @@
     "build": "craco build",
     "test": "craco test",
     "lint": "eslint --ext .ts,.tsx src/",
-    "deploy": "echo 'Building in development mode' && PUBLIC_URL=/portfolio yarn build && echo 'Deploying to kallio.website (remember to open the port)' && scp -P 9922 -r build/* richierock@kallio.website:/var/www/html/portfolio",
-    "deploy-prod": "echo 'Building in production mode' && yarn build --prod && echo 'Deploying to rikukallio.fi' && scp -r dist/* cafakfih@rikukallio.fi:/home3/cafakfih/public_html"
+    "deploy-own-server": "echo 'Build and deploy to kallio.website' && PUBLIC_URL=/portfolio yarn build && echo 'Deploying to kallio.website (remember to open the port)' && scp -P 9922 -r build/* richierock@kallio.website:/var/www/html/portfolio",
+    "deploy-preview": "echo 'Build and deploy a preview' && yarn build && firebase hosting:channel:deploy rikukallio_preview",
+    "deploy-prod": "echo 'Build and deploy to production' && yarn build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
