@@ -1,6 +1,6 @@
 /*eslint-disable*/
+import Links from "data/Links";
 import React, { useState } from "react";
-import { scrollTo } from "../../util";
 import NavItem from "./NavItem";
 import NavLink from "./NavLink";
 
@@ -40,8 +40,8 @@ const Navbar = () => {
               </li>
             </ul>
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <NavLink clickCallback={() => setNavbarOpen(false)} text="Github" iconClass="fab fa-github" link="https://www.github.com/richierock" />
-              <NavLink clickCallback={() => setNavbarOpen(false)} text="Linkedin" iconClass="fab fa-linkedin" link="https://linkedin.com/in/riku-kallio-250794694" />
+              <NavLink clickCallback={() => setNavbarOpen(false)} text="Github" iconClass="fab fa-github" link={Links.github} />
+              <NavLink clickCallback={() => setNavbarOpen(false)} text="Linkedin" iconClass="fab fa-linkedin" link={Links.linkedIn} />
               <NavItem clickCallback={() => setNavbarOpen(false)} iconClass="fas fa-code mr-2" scrollId="tech" text="Tech"/>
               <NavItem clickCallback={() => setNavbarOpen(false)} iconClass="far fa-building mr-2" scrollId="work" text="Work"/>
               <NavItem clickCallback={() => setNavbarOpen(false)} iconClass="fas fa-university mr-2" scrollId="education" text="Education"/>
