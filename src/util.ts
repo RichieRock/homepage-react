@@ -2,18 +2,34 @@ import scrollIntoView from 'scroll-into-view-if-needed'
 
 export const getYears = (
   years: number,
-  getString?: boolean
+  getString?:
+    | 'long'
+    | 'L'
+    | 'l'
+    | 'short'
+    | 'S'
+    | 's'
+    | boolean
+    | undefined
+    | null
 ): string | number => {
+  const useLong =
+    getString === true ||
+    String(getString).toLowerCase() === 'long' ||
+    String(getString).toLowerCase() === 'l'
+  const useShort =
+    String(getString).toLowerCase() === 'short' ||
+    String(getString).toLowerCase() === 's'
   if (years === 1) {
-    return getString ? '1 year' : 1
+    return useLong ? '1 year' : useShort ? '1' : 1
   } else if (years > 20) {
-    return getString ? '20+ years' : 20
+    return useLong ? '20+ years' : useShort ? '20+' : 20
   } else if (years > 15) {
-    return getString ? '15+ years' : 15
+    return useLong ? '15+ years' : useShort ? '15+' : 15
   } else if (years > 10) {
-    return getString ? '10+ years' : 10
+    return useLong ? '10+ years' : useShort ? '10+' : 10
   } else {
-    return getString ? years + ' years' : years
+    return useLong || useShort ? years + ' years' : years
   }
 }
 
