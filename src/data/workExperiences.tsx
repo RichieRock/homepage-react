@@ -1,11 +1,11 @@
 // companies
-import compile from 'assets/img/compile.png'
+import compile from 'assets/img/compile.webp'
 // icons
 import graphql from 'assets/img/graphql.svg'
-import octo3 from 'assets/img/octo3.png'
-import vaisala from 'assets/img/vaisala.png'
-import visma from 'assets/img/visma.jpg'
-import zef from 'assets/img/zef.png'
+import octo3 from 'assets/img/octo3.webp'
+import vaisala from 'assets/img/vaisala.webp'
+import visma from 'assets/img/visma.webp'
+import zef from 'assets/img/zef.webp'
 import React, { ReactNode } from 'react'
 
 /* Work experiences */

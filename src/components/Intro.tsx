@@ -1,5 +1,5 @@
-import macbook from 'assets/img/macbook.jpg'
-import Riku from 'assets/img/Riku.jpg'
+import macbook from 'assets/img/macbook.webp'
+import Riku from 'assets/img/Riku.webp'
 import React from 'react'
 
 import { experienceYears } from '../data/techExperiences'
