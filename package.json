@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "yarn tailwindcss & vite",
-    "build": "tsc && yarn tailwindcss && vite build",
+    "build": "yarn tailwindcss & tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "tailwindcss": "npx tailwindcss -i src/assets/styles/index.css -o src/assets/styles/tailwindoutput.css --watch"

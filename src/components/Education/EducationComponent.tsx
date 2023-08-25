@@ -1,5 +1,4 @@
-import { Education } from 'data/educations'
-import React from 'react'
+import { Education } from '../../data/educations'
 
 interface EducationProps {
   education: Education
