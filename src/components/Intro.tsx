@@ -1,6 +1,5 @@
-import macbook from 'assets/img/macbook.webp'
-import Riku from 'assets/img/Riku.webp'
-import React from 'react'
+import macbook from '../assets/img/macbook.webp'
+import Riku from '../assets/img/Riku.webp'
 
 import { experienceYears } from '../data/techExperiences'
 import { getYears, scrollTo } from '../util'
@@ -8,7 +7,7 @@ import { getYears, scrollTo } from '../util'
 const IntroSection = () => {
   return (
     <>
-      <section className="relative block h-500-px">
+      <section className="relative block h-500-px" style={{height: '500px'}}>
         <div
           className="absolute top-0 w-full h-full bg-center bg-cover"
           style={{ backgroundImage: `url(${macbook})` }}

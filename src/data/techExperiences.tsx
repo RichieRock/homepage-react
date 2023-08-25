@@ -28,6 +28,7 @@ const experience: ExperienceWithDuration<ExperienceStats> = {
     end: moment('1.3.2016', 'DD.MM.YYYY'),
   },
   js: { start: moment('1.9.2012', 'DD.MM.YYYY'), end: moment() },
+  ts: { start: moment('1.1.2020', 'DD.MM.YYYY'), end: moment() },
   linux: { start: moment('1.9.2006', 'DD.MM.YYYY'), end: moment() },
   mac: { start: moment('1.9.2014', 'DD.MM.YYYY'), end: moment() },
   node: { start: moment('1.9.2014', 'DD.MM.YYYY'), end: moment() },

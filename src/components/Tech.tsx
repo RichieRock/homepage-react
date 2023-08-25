@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { experienceYears } from '../data/techExperiences'
 import { getYears } from '../util'
 

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { scrollTo } from '../../util'
 
 interface NavItemProps {

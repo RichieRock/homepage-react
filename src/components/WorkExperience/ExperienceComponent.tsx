@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { TechIcon, WorkExperience, WorkInfo } from '../../data/workExperiences'
 import { scrollTo } from '../../util'

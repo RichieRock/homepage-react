@@ -1,6 +1,6 @@
 /*eslint-disable*/
-import Links from "data/Links";
-import React, { useState } from "react";
+import Links from "../../data/Links";
+import { useState } from "react";
 import NavItem from "./NavItem";
 import NavLink from "./NavLink";
 

@@ -1,68 +1,34 @@
 {
   "name": "homepage-react",
-  "version": "0.1.0",
   "private": true,
-  "homepage": "",
-  "repository": "https://github.com/RichieRock/homepage-react",
-  "dependencies": {
-    "@craco/craco": "^6.1.1",
-    "@fortawesome/fontawesome-free": "^5.15.2",
-    "@popperjs/core": "^2.8.6",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "firebase": "^8.2.10",
-    "moment": "^2.29.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
-    "scroll-into-view-if-needed": "^2.2.27",
-    "web-vitals": "^1.0.1"
-  },
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "eject": "react-scripts eject",
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "lint": "eslint --ext .ts,.tsx src/",
-    "deploy-own-server": "echo 'Build and deploy to kallio.website' && PUBLIC_URL=/portfolio yarn build && echo 'Deploying to kallio.website (remember to open the port)' && scp -P 9922 -r build/* richierock@kallio.website:/var/www/html/portfolio",
-    "deploy-preview": "echo 'Build and deploy a preview' && yarn build && firebase hosting:channel:deploy rikukallio_preview",
-    "deploy-prod": "echo 'Build and deploy to production' && yarn build && firebase deploy"
+    "dev": "yarn tailwindcss & vite",
+    "build": "tsc && yarn tailwindcss && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "tailwindcss": "npx tailwindcss -i src/assets/styles/index.css -o src/assets/styles/tailwindoutput.css --watch"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "firebase": "^10.3.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "scroll-into-view-if-needed": "^3.0.10"
   },
   "devDependencies": {
-    "@tailwindcss/postcss7-compat": "^2.0.3",
-    "@types/moment": "^2.13.0",
-    "@types/react": "^17.0.2",
-    "@typescript-eslint/eslint-plugin": "^2.1.0",
-    "@typescript-eslint/parser": "^2.1.0",
-    "autoprefixer": "^9",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-simple-import-sort": "^5.0.1",
-    "postcss": "^7",
-    "prettier": "1.19.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  },
-  "optionalDependencies": {
-    "typescript": "3.4.3"
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
   }
 }
