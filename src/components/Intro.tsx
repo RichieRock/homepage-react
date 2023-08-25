@@ -7,7 +7,7 @@ import { getYears, scrollTo } from '../util'
 const IntroSection = () => {
   return (
     <>
-      <section className="relative block h-500-px" style={{height: '500px'}}>
+      <section className="relative block" style={{height: '500px'}}>
         <div
           className="absolute top-0 w-full h-full bg-center bg-cover"
           style={{ backgroundImage: `url(${macbook})` }}
@@ -18,8 +18,8 @@ const IntroSection = () => {
           ></span>
         </div>
         <div
-          className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
-          style={{ transform: 'translateZ(0)' }}
+          className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style={{ transform: 'translateZ(0)', width: '70px' }}
         >
           <svg
             className="absolute bottom-0 overflow-hidden"
@@ -47,7 +47,8 @@ const IntroSection = () => {
                     <img
                       alt="..."
                       src={Riku}
-                      className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
+                      className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                      style={{maxWidth: '150px'}}
                     />
                   </div>
                 </div>
