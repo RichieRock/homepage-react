@@ -34,9 +34,9 @@ export default function Footer() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="mailto:contact@rikukallio.fi"
+                  href="mailto:rikukalliofi@gmail.com"
                 >
-                  contact (at) rikukallio.fi
+                  rikukalliofi (at) gmail.com
                 </a>
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
@@ -71,7 +71,7 @@ export default function Footer() {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="mailto:contact@rikukallio.fi"
+                    href="mailto:rikukalliofi@gmail.com"
                   >
                     <i className="far fa-paper-plane"></i>
                   </a>
@@ -104,7 +104,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="mailto:contact@rikukallio.fi"
+                        href="mailto:rikukalliofi@gmail.com"
                       >
                         Mail to me
                       </a>
