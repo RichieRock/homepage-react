@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { TechIcon, WorkExperience, WorkInfo } from '../../data/workExperiences'
 import { scrollTo } from '../../util'
@@ -13,7 +12,8 @@ const ExperienceComponent = ({ workExperience }: ExperienceProps) => {
       <div className="w-full lg:w-3/12 ml-auto mr-auto px-4">
         <img
           alt={workExperience.company.name}
-          className="max-w-210-px lg:max-w-full h-auto max-h-44"
+          className="lg:max-w-full h-auto max-h-44"
+          style={{maxWidth: '210px'}}
           src={workExperience.company.logo}
         />
         <h4 className="text-xl font-normal mt-4">

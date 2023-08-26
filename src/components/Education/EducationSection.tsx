@@ -1,5 +1,4 @@
-import { Language, languages } from 'data/languages'
-import React from 'react'
+import { Language, languages } from '../../data/languages'
 
 import { educations } from '../../data/educations'
 import EducationComponent from './EducationComponent'

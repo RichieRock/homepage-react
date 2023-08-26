@@ -1,5 +1,4 @@
-import { WorkExperience, workExperiences } from 'data/workExperiences'
-import React from 'react'
+import { WorkExperience, workExperiences } from '../../data/workExperiences'
 
 import ExperienceComponent from './ExperienceComponent'
 

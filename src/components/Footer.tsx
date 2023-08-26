@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Links from '../data/Links'
 import { scrollTo } from '../util'
 

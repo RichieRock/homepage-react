@@ -1,12 +1,12 @@
 // companies
-import compile from 'assets/img/compile.webp'
+import compile from '../assets/img/compile.webp'
 // icons
-import graphql from 'assets/img/graphql.svg'
-import octo3 from 'assets/img/octo3.webp'
-import vaisala from 'assets/img/vaisala.webp'
-import visma from 'assets/img/visma.webp'
-import zef from 'assets/img/zef.webp'
-import React, { ReactNode } from 'react'
+import graphql from '../assets/img/graphql.svg'
+import octo3 from '../assets/img/octo3.webp'
+import vaisala from '../assets/img/vaisala.webp'
+import visma from '../assets/img/visma.webp'
+import zef from '../assets/img/zef.webp'
+import { ReactNode } from 'react'
 
 /* Work experiences */
 export interface Company {
@@ -14,12 +14,13 @@ export interface Company {
   logo: string
   text: ReactNode
 }
+export type TechIcon = string
 export interface WorkInfo {
   title: string
   text: ReactNode
   duration: string
-  techIconArray: string[]
-  extraIcons?: any[]
+  techIconArray: TechIcon[]
+  extraIcons?: string[]
 }
 export interface WorkExperience {
   company: Company
@@ -49,9 +50,9 @@ export const workExperiences: WorkExperience[] = [
           <>
             Working as a fullstack developer consultant for different clients.
             <br />
-            Configuring Azure and AWS cloud environments, mainly using React on
-            the frontend and Typescript language. Experiencing GraphQL in
-            additional to traditional REST APIs.
+            Configuring Azure and AWS cloud environments, using React with Typescript on
+            the frontend and building backend with Node services using Typescript. Experiencing GraphQL in
+            addition to traditional REST APIs.
           </>
         ),
         duration: 'January 2021 - Present',

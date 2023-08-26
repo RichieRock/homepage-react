@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { experienceYears } from '../data/techExperiences'
 import { getYears } from '../util'
 
@@ -98,9 +96,9 @@ const Tech = () => {
             </h6>
             <p className="mt-2 mb-4 text-gray-500">
               {Math.max(
-                getYears(experienceYears.azure),
-                getYears(experienceYears.aws),
-                getYears(experienceYears.googlecloud)
+                experienceYears.azure,
+                experienceYears.aws,
+                experienceYears.googlecloud
               )}{' '}
               years
             </p>

@@ -1,8 +1,7 @@
-import EducationSection from 'components/Education/EducationSection'
-import Intro from 'components/Intro'
-import Tech from 'components/Tech'
-import WorkExperienceSection from 'components/WorkExperience/WorkExperienceSection'
-import React from 'react'
+import EducationSection from './components/Education/EducationSection'
+import Intro from './components/Intro'
+import Tech from './components/Tech'
+import WorkExperienceSection from './components/WorkExperience/WorkExperienceSection'
 
 import Footer from './components/Footer'
 // Modules
@@ -11,7 +10,7 @@ import Navbar from './components/Navbar/Navbar'
 const RikuKallio = () => {
   return (
     <>
-      <Navbar transparent />
+      <Navbar />
       <main id="top" className="profile-page">
         <div id="intro">
           <Intro />

@@ -1,6 +1,6 @@
 //import oulu_university from 'assets/img/oulu_university.svg'
-import oulu_university from 'assets/img/university_of_oulu.svg'
-import React, { ReactNode } from 'react'
+import oulu_university from '../assets/img/university_of_oulu.svg'
+import { ReactNode } from 'react'
 
 export interface Education {
   logo: string
@@ -9,7 +9,7 @@ export interface Education {
   eduDescription: ReactNode
   degree: ReactNode
   duration: string
-  description: string
+  description: ReactNode
 }
 
 export const educations: Education[] = [

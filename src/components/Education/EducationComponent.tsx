@@ -1,5 +1,4 @@
-import { Education } from 'data/educations'
-import React from 'react'
+import { Education } from '../../data/educations'
 
 interface EducationProps {
   education: Education
@@ -11,7 +10,8 @@ const EducationComponent = ({ education }: EducationProps) => {
       <div className="w-full lg:w-3/12 ml-auto mr-auto px-4">
         <img
           alt={education.name}
-          className="max-w-210-px lg:max-w-full h-auto max-h-44"
+          className="lg:max-w-full h-auto max-h-44"
+          style={{maxWidth: '210px'}}
           src={education.logo}
         />
         <h4 className="text-xl font-normal mt-4">{education.name}</h4>
