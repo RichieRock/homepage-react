@@ -14,7 +14,7 @@ const experience: ExperienceWithDuration<ExperienceStats> = {
     start: moment('1.5.2014', 'DD.MM.YYYY'),
     end: moment('1.3.2016', 'DD.MM.YYYY'),
   },
-  angular: { start: moment('1.6.2015', 'DD.MM.YYYY'), end: moment() },
+  angular: { start: moment('1.6.2015', 'DD.MM.YYYY'), end: moment('1.1.2021', 'DD.MM.YYYY') },
   aws: { start: moment('1.11.2021', 'DD.MM.YYYY'), end: moment() },
   azure: { start: moment('1.10.2018', 'DD.MM.YYYY'), end: moment() },
   build: { start: moment('1.9.2014', 'DD.MM.YYYY'), end: moment() },
