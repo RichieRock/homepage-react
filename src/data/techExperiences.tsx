@@ -9,7 +9,10 @@ type ExperienceStats = {
   start: Moment
   end: Moment
 }
-const experience: ExperienceWithDuration<ExperienceStats> = {
+
+type ExperienceOrMore = ExperienceStats | ExperienceStats[]
+
+const experience: ExperienceWithDuration<ExperienceOrMore> = {
   android: {
     start: moment('1.5.2014', 'DD.MM.YYYY'),
     end: moment('1.3.2016', 'DD.MM.YYYY'),
@@ -23,10 +26,16 @@ const experience: ExperienceWithDuration<ExperienceStats> = {
     start: moment('1.9.2015', 'DD.MM.YYYY'),
     end: moment('1.10.2017', 'DD.MM.YYYY'),
   },
-  java: {
+  java: [
+  {
     start: moment('1.5.2014', 'DD.MM.YYYY'),
-    end: moment('1.3.2016', 'DD.MM.YYYY'),
+    end: moment('1.10.2017', 'DD.MM.YYYY'),
   },
+  {
+    start: moment('10.1.2019', 'DD.MM.YYYY'),
+    end: moment('31.12.2020', 'DD.MM.YYYY'),
+  }
+  ],
   js: { start: moment('1.9.2012', 'DD.MM.YYYY'), end: moment() },
   ts: { start: moment('1.1.2020', 'DD.MM.YYYY'), end: moment() },
   linux: { start: moment('1.9.2006', 'DD.MM.YYYY'), end: moment() },
@@ -42,9 +51,25 @@ export const experienceYears: ExperienceWithDuration<number> = {}
 
 const initExperienceYears = () => {
   for (const key in experience) {
-    experienceYears[key] = Math.round(
-      moment.duration(experience[key].end.diff(experience[key].start)).asYears()
-    )
+    // determine if it's an array or not
+
+    const ex = experience[key]
+    let thisExperienceInYears = 0
+    if (Array.isArray(ex)) {
+      const totalInYears = ex.reduce((total, exp) => {
+        total += Math.round(
+          moment.duration(exp.end.diff(exp.start)).asYears()
+        )
+        return total
+      }, 0)
+      thisExperienceInYears = totalInYears
+    } else {
+      thisExperienceInYears = Math.round(
+        moment.duration(ex.end.diff(ex.start)).asYears()
+      )
+    }
+
+    experienceYears[key] = thisExperienceInYears
   }
 }
 
