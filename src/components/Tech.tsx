@@ -51,15 +51,6 @@ const Tech = () => {
           </div>
           <div className="w-full lg:w-3/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
-              <i className="fab fa-angular text-5xl"></i>
-            </div>
-            <h6 className="text-xl mt-5 font-semibold text-white">Angular</h6>
-            <p className="mt-2 mb-4 text-gray-500">
-              {getYears(experienceYears.angular, true)}
-            </p>
-          </div>
-          <div className="w-full lg:w-3/12 px-4 text-center">
-            <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-react text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">React</h6>
@@ -67,8 +58,6 @@ const Tech = () => {
               {getYears(experienceYears.react, true)}
             </p>
           </div>
-        </div>
-        <div className="flex flex-wrap lg:mt-12 justify-center">
           <div className="w-full lg:w-3/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-java text-5xl"></i>
@@ -78,6 +67,8 @@ const Tech = () => {
               {getYears(experienceYears.java, true)}
             </p>
           </div>
+        </div>
+        <div className="flex flex-wrap lg:mt-12 justify-center">
           <div className="w-full lg:w-3/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-node text-5xl"></i>
@@ -101,6 +92,15 @@ const Tech = () => {
                 experienceYears.googlecloud
               )}{' '}
               years
+            </p>
+          </div>
+          <div className="w-full lg:w-3/12 px-4 text-center">
+            <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
+              <i className="fab fa-angular text-5xl"></i>
+            </div>
+            <h6 className="text-xl mt-5 font-semibold text-white">Angular</h6>
+            <p className="mt-2 mb-4 text-gray-500">
+              {getYears(experienceYears.angular, true)}
             </p>
           </div>
         </div>
