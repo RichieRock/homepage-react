@@ -78,18 +78,11 @@ const Navbar = () => {
                 scrollId="footer"
                 text="Contact"
               />
-              <li className="flex items-center">
-                <button
-                  className="lg:text-white text-gray-800 dark:text-gray-300 px-3 py-4 lg:py-2 text-sm font-bold rounded-sm outline-hidden focus:outline-hidden ease-linear transition-all duration-150"
-                  type="button"
-                  onClick={toggleTheme}
-                  aria-label="Toggle dark mode"
-                >
-                  <i
-                    className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}
-                  />
-                </button>
-              </li>
+              <NavLink
+                text={theme === "dark" ? "Light mode" : "Dark mode"}
+                clickCallback={toggleTheme}
+                iconClass={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}
+              />
             </ul>
           </div>
         </div>
