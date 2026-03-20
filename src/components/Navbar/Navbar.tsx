@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import Links from "../../data/Links";
 import { useState } from "react";
 import { useTheme } from "../../useTheme";
@@ -19,10 +18,11 @@ const Navbar = () => {
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <i className={
-                "text-white " +
-                (navbarOpen ? "fas fa-times" : "fas fa-bars")
-              } />
+              <i
+                className={
+                  "text-white " + (navbarOpen ? "fas fa-times" : "fas fa-bars")
+                }
+              />
             </button>
           </div>
           <div
@@ -42,12 +42,42 @@ const Navbar = () => {
               </li>
             </ul>
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto items-center">
-              <NavLink clickCallback={() => setNavbarOpen(false)} text="Github" iconClass="fab fa-github" link={Links.github} />
-              <NavLink clickCallback={() => setNavbarOpen(false)} text="Linkedin" iconClass="fab fa-linkedin" link={Links.linkedIn} />
-              <NavItem clickCallback={() => setNavbarOpen(false)} iconClass="fas fa-code mr-2" scrollId="tech" text="Tech"/>
-              <NavItem clickCallback={() => setNavbarOpen(false)} iconClass="far fa-building mr-2" scrollId="work" text="Work"/>
-              <NavItem clickCallback={() => setNavbarOpen(false)} iconClass="fas fa-university mr-2" scrollId="education" text="Education"/>
-              <NavItem clickCallback={() => setNavbarOpen(false)} iconClass="far fa-id-card mr-2" scrollId="footer" text="Contact"/>
+              <NavLink
+                clickCallback={() => setNavbarOpen(false)}
+                text="Github"
+                iconClass="fab fa-github"
+                link={Links.github}
+              />
+              <NavLink
+                clickCallback={() => setNavbarOpen(false)}
+                text="Linkedin"
+                iconClass="fab fa-linkedin"
+                link={Links.linkedIn}
+              />
+              <NavItem
+                clickCallback={() => setNavbarOpen(false)}
+                iconClass="fas fa-code mr-2"
+                scrollId="tech"
+                text="Tech"
+              />
+              <NavItem
+                clickCallback={() => setNavbarOpen(false)}
+                iconClass="far fa-building mr-2"
+                scrollId="work"
+                text="Work"
+              />
+              <NavItem
+                clickCallback={() => setNavbarOpen(false)}
+                iconClass="fas fa-university mr-2"
+                scrollId="education"
+                text="Education"
+              />
+              <NavItem
+                clickCallback={() => setNavbarOpen(false)}
+                iconClass="far fa-id-card mr-2"
+                scrollId="footer"
+                text="Contact"
+              />
               <li className="flex items-center">
                 <button
                   className="lg:text-white text-gray-800 dark:text-gray-300 px-3 py-4 lg:py-2 text-sm font-bold rounded-sm outline-hidden focus:outline-hidden ease-linear transition-all duration-150"
@@ -55,7 +85,9 @@ const Navbar = () => {
                   onClick={toggleTheme}
                   aria-label="Toggle dark mode"
                 >
-                  <i className={theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon'} />
+                  <i
+                    className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}
+                  />
                 </button>
               </li>
             </ul>
@@ -64,7 +96,6 @@ const Navbar = () => {
       </nav>
     </>
   );
-}
+};
 
-
-export default Navbar
+export default Navbar;
