@@ -4,8 +4,9 @@ import { getYears } from '../util'
 const Tech = () => {
   return (
     <section className="pb-10 relative block bg-gray-900 dark:bg-gray-950">
+      {/* 81px instead of h-20 (80px) to avoid sub-pixel gap between sections */}
       <div
-        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-[81px]"
         style={{ transform: 'translateZ(0)' }}
       >
         <svg

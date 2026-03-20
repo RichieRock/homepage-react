@@ -6,8 +6,9 @@ import EducationComponent from './EducationComponent'
 const EducationSection = () => {
   return (
     <section className="relative block bg-indigo-900 dark:bg-indigo-950">
+      {/* 81px instead of h-20 (80px) to avoid sub-pixel gap between sections */}
       <div
-        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-[81px]"
         style={{ transform: 'translateZ(0)' }}
       >
         <svg
