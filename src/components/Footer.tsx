@@ -39,7 +39,7 @@ export default function Footer() {
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
                 <button
-                  className="bg-white dark:bg-gray-700 text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white dark:bg-gray-700 text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-hidden focus:outline-hidden mr-2"
                   type="button"
                 >
                   <a
@@ -51,7 +51,7 @@ export default function Footer() {
                   </a>
                 </button>
                 <button
-                  className="bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-hidden focus:outline-hidden mr-2"
                   type="button"
                 >
                   <a
@@ -63,7 +63,7 @@ export default function Footer() {
                   </a>
                 </button>
                 <button
-                  className="bg-white dark:bg-gray-700 text-red-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  className="bg-white dark:bg-gray-700 text-red-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-hidden focus:outline-hidden mr-2"
                   type="button"
                 >
                   <a
@@ -115,7 +115,7 @@ export default function Footer() {
           <hr className="my-6 border-gray-400 dark:border-gray-600" />
           <div className="flex flex-col flex-wrap items-center md:justify-between justify-center">
             <button
-              className="bg-white dark:bg-gray-700 text-indigo-600 dark:text-indigo-400 hover:text-white hover:bg-black shadow-lg hover:shadow-inner font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mb-2"
+              className="bg-white dark:bg-gray-700 text-indigo-600 dark:text-indigo-400 hover:text-white hover:bg-black shadow-lg hover:shadow-inner font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-hidden focus:outline-hidden mb-2"
               type="button"
               onClick={() => scrollTo('top')}
             >

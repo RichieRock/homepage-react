@@ -5,11 +5,10 @@
   "type": "module",
   "packageManager": "bun@1.1.43",
   "scripts": {
-    "dev": "bun run tailwindcss & vite",
-    "build": "bun run tailwindcss & tsc && vite build --outDir build",
+    "dev": "vite",
+    "build": "tsc && vite build --outDir build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "tailwindcss": "bunx tailwindcss -i src/assets/styles/index.css -o src/assets/styles/tailwindoutput.css --watch"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
@@ -20,6 +19,7 @@
     "scroll-into-view-if-needed": "^3.0.10"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -28,8 +28,8 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "tailwindcss": "^3.3.3",
+    "tailwindcss": "^4.2.2",
     "typescript": "^5.0.2",
-    "vite": "^5"
+    "vite": "^8.0.1"
   }
 }

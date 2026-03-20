@@ -16,7 +16,7 @@ const NavItem = ({
   return (
     <li className="flex items-center">
       <button
-        className="text-gray-800 dark:text-gray-300 lg:text-gray-300 lg:hover:text-white px-3 py-4 lg:py-2 text-xs font-bold uppercase rounded outline-none focus:outline-none lg:mr-1 lg:mb-0 ease-linear transition-all duration-150"
+        className="text-gray-800 dark:text-gray-300 lg:text-gray-300 lg:hover:text-white px-3 py-4 lg:py-2 text-xs font-bold uppercase rounded-sm outline-hidden focus:outline-hidden lg:mr-1 lg:mb-0 ease-linear transition-all duration-150"
         type="button"
         onClick={() => {
           scrollId ? scrollTo(scrollId) : null

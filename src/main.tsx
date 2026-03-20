@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import RikuKallio from './RikuKallio'
 import { ThemeProvider } from './ThemeContext'
 // styles
-import './assets/styles/tailwindoutput.css'
 import './assets/styles/index.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 

@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <button
-              className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded-sm bg-transparent block lg:hidden outline-hidden focus:outline-hidden"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
@@ -27,8 +27,8 @@ const Navbar = () => {
           </div>
           <div
             className={
-              "z-10 lg:flex flex-grow items-center bg-white dark:bg-gray-800 lg:bg-transparent lg:dark:bg-transparent lg:shadow-none" +
-              (navbarOpen ? " block rounded shadow-lg" : " hidden")
+              "z-10 lg:flex grow items-center bg-white dark:bg-gray-800 lg:bg-transparent lg:dark:bg-transparent lg:shadow-none" +
+              (navbarOpen ? " block rounded-sm shadow-lg" : " hidden")
             }
           >
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
@@ -50,7 +50,7 @@ const Navbar = () => {
               <NavItem clickCallback={() => setNavbarOpen(false)} iconClass="far fa-id-card mr-2" scrollId="footer" text="Contact"/>
               <li className="flex items-center">
                 <button
-                  className="lg:text-white text-gray-800 dark:text-gray-300 px-3 py-4 lg:py-2 text-sm font-bold rounded outline-none focus:outline-none ease-linear transition-all duration-150"
+                  className="lg:text-white text-gray-800 dark:text-gray-300 px-3 py-4 lg:py-2 text-sm font-bold rounded-sm outline-hidden focus:outline-hidden ease-linear transition-all duration-150"
                   type="button"
                   onClick={toggleTheme}
                   aria-label="Toggle dark mode"
