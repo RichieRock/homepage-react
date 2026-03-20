@@ -9,7 +9,7 @@ const NavLink = ({ link, text, iconClass, clickCallback }: NavLinkProps) => {
   return (
     <li className="flex items-center">
       <a
-        className="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+        className="lg:text-white lg:hover:text-gray-300 text-gray-800 dark:text-gray-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
         rel="noopener noreferrer"
         href={link}
         onClick={clickCallback}

@@ -3,7 +3,7 @@ import { getYears } from '../util'
 
 const Tech = () => {
   return (
-    <section className="pb-10 relative block bg-gray-900">
+    <section className="pb-10 relative block bg-gray-900 dark:bg-gray-950">
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
         style={{ transform: 'translateZ(0)' }}
@@ -18,7 +18,7 @@ const Tech = () => {
           y="0"
         >
           <polygon
-            className="text-gray-900 fill-current"
+            className="text-gray-900 dark:text-gray-950 fill-current"
             points="2560 0 2560 100 0 100"
           ></polygon>
         </svg>
@@ -30,7 +30,7 @@ const Tech = () => {
             <h2 className="text-4xl font-semibold text-white">
               Technology stack
             </h2>
-            <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+            <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500 dark:text-gray-400">
               As a fullstack developer with focus on the frontend, my main
               expertise lies in frontend frameworks but I&lsquo;m also very
               fluent with Java, node.js and typescript on the backend
@@ -45,7 +45,7 @@ const Tech = () => {
             <h6 className="text-xl mt-5 font-semibold text-white">
               JS HTML CSS
             </h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.js, true)}
             </p>
           </div>
@@ -54,7 +54,7 @@ const Tech = () => {
               <i className="fab fa-react text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">React</h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.react, true)}
             </p>
           </div>
@@ -63,7 +63,7 @@ const Tech = () => {
               <i className="fab fa-java text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">Java</h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.java, true)}
             </p>
           </div>
@@ -74,7 +74,7 @@ const Tech = () => {
               <i className="fab fa-node text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">Node.js</h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.node, true)}
             </p>
           </div>
@@ -85,7 +85,7 @@ const Tech = () => {
             <h6 className="text-xl mt-5 font-semibold text-white">
               Azure/AWS/GCP
             </h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {Math.max(
                 experienceYears.azure,
                 experienceYears.aws,
@@ -99,7 +99,7 @@ const Tech = () => {
               <i className="fab fa-angular text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">Angular</h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.angular, true)}
             </p>
           </div>
@@ -115,7 +115,7 @@ const Tech = () => {
               <i className="fab fa-git text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">Git</h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.git, true)}
             </p>
           </div>
@@ -124,7 +124,7 @@ const Tech = () => {
               <i className="fas fa-circle-notch text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">Scrum</h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.scrum, true)}
             </p>
           </div>
@@ -135,7 +135,7 @@ const Tech = () => {
               <i className="fab fa-windows text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">Windows</h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.windows, true)}
             </p>
           </div>
@@ -144,7 +144,7 @@ const Tech = () => {
               <i className="fab fa-linux text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">Linux</h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.linux, true)}
             </p>
           </div>
@@ -153,7 +153,7 @@ const Tech = () => {
               <i className="fab fa-apple text-5xl"></i>
             </div>
             <h6 className="text-xl mt-5 font-semibold text-white">MacOs</h6>
-            <p className="mt-2 mb-4 text-gray-500">
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.mac, true)}
             </p>
           </div>

@@ -5,7 +5,7 @@ import EducationComponent from './EducationComponent'
 
 const EducationSection = () => {
   return (
-    <section className="relative block bg-indigo-900">
+    <section className="relative block bg-indigo-900 dark:bg-indigo-950">
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
         style={{ transform: 'translateZ(0)' }}
@@ -20,7 +20,7 @@ const EducationSection = () => {
           y="0"
         >
           <polygon
-            className="text-indigo-900 fill-current"
+            className="text-indigo-900 dark:text-indigo-950 fill-current"
             points="2560 0 2560 100 0 100"
           ></polygon>
         </svg>
