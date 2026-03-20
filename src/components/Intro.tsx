@@ -1,13 +1,13 @@
-import macbook from '../assets/img/macbook.webp'
-import Riku from '../assets/img/Riku.webp'
+import macbook from "../assets/img/macbook.webp";
+import Riku from "../assets/img/Riku.webp";
 
-import { experienceYears } from '../data/techExperiences'
-import { getYears, scrollTo } from '../util'
+import { experienceYears } from "../data/techExperiences";
+import { getYears, scrollTo } from "../util";
 
 const IntroSection = () => {
   return (
     <>
-      <section className="relative block" style={{height: '500px'}}>
+      <section className="relative block" style={{ height: "500px" }}>
         <div
           className="absolute top-0 w-full h-full bg-center bg-cover"
           style={{ backgroundImage: `url(${macbook})` }}
@@ -19,7 +19,7 @@ const IntroSection = () => {
         </div>
         <div
           className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style={{ transform: 'translateZ(0)', width: '70px' }}
+          style={{ transform: "translateZ(0)", width: "70px" }}
         >
           <svg
             className="absolute bottom-0 overflow-hidden"
@@ -48,7 +48,7 @@ const IntroSection = () => {
                       alt="..."
                       src={Riku}
                       className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
-                      style={{maxWidth: '150px'}}
+                      style={{ maxWidth: "150px" }}
                     />
                   </div>
                 </div>
@@ -57,7 +57,7 @@ const IntroSection = () => {
                     <button
                       className="bg-indigo-600 active:bg-indigo-800 hover:bg-indigo-800 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                       type="button"
-                      onClick={() => scrollTo('footer')}
+                      onClick={() => scrollTo("footer")}
                     >
                       Contact
                     </button>
@@ -67,7 +67,7 @@ const IntroSection = () => {
                   <div className="flex justify-center py-4 lg:pt-4 pt-8">
                     <div className="mr-4 p-3 text-center">
                       <span className="text-xl font-bold block uppercase tracking-wide text-gray-700">
-                        {getYears(experienceYears.programming, 'short')}
+                        {getYears(experienceYears.programming, "short")}
                       </span>
                       <span className="text-sm text-gray-500">
                         Years of programming
@@ -97,12 +97,12 @@ const IntroSection = () => {
                   Riku Kallio
                 </h3>
                 <div className="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
-                  <i className="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>{' '}
+                  <i className="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>{" "}
                   Lappeenranta, Finland
                 </div>
                 <div className="mb-2 text-gray-700 mt-10">
                   <i className="fas fa-briefcase mr-2 text-lg text-gray-500"></i>
-                  Software Specialist
+                  Hands-on fullstack architect
                 </div>
                 <div className="mb-2 text-gray-700">
                   <i className="fas fa-university mr-2 text-lg text-gray-500"></i>
@@ -113,15 +113,11 @@ const IntroSection = () => {
                 <div className="flex flex-wrap justify-center">
                   <div className="w-full lg:w-9/12 px-4">
                     <p className="mb-4 text-lg leading-relaxed text-gray-800">
-                      An ambitious and curious Fullstack developer with
-                      experience in modern Frontend technologies and a
-                      Masters&lsquo; degree in Computer Science and Engineering.
-                      Strong experience in Java, Javascript and Typescript
-                      languages. Always looking for improvement in tech skills
-                      and new ways to develop software. As developers need to
-                      adopt to new environments, frameworks and even languages
-                      throughout the career, my ability to learning new skills
-                      fast is crucial.
+                      Hands-on fullstackarchitect with a Master&apos;s degree in
+                      Computer Science and Engineering. Strong in Java,
+                      TypeScript, React and architectural design, and I use AI
+                      tools daily to speed up research, prototyping, and code
+                      quality.
                     </p>
                   </div>
                 </div>
@@ -131,7 +127,7 @@ const IntroSection = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default IntroSection
+export default IntroSection;

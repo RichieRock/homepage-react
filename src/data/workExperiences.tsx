@@ -1,35 +1,35 @@
 // companies
-import compile from '../assets/img/compile.webp'
+import compile from "../assets/img/compile.webp";
 // icons
-import graphql from '../assets/img/graphql.svg'
-import octo3 from '../assets/img/octo3.webp'
-import vaisala from '../assets/img/vaisala.webp'
-import visma from '../assets/img/visma.webp'
-import zef from '../assets/img/zef.webp'
-import { ReactNode } from 'react'
+import graphql from "../assets/img/graphql.svg";
+import octo3 from "../assets/img/octo3.webp";
+import vaisala from "../assets/img/vaisala.webp";
+import visma from "../assets/img/visma.webp";
+import zef from "../assets/img/zef.webp";
+import { ReactNode } from "react";
 
 /* Work experiences */
 export interface Company {
-  name: string
-  logo: string
-  text: ReactNode
+  name: string;
+  logo: string;
+  text: ReactNode;
 }
-export type TechIcon = string
+export type TechIcon = string;
 export interface WorkInfo {
-  title: string
-  text: ReactNode
-  duration: string
-  techIconArray: TechIcon[]
-  extraIcons?: string[]
+  title: string;
+  text: ReactNode;
+  duration: string;
+  techIconArray: TechIcon[];
+  extraIcons?: string[];
 }
 export interface WorkExperience {
-  company: Company
-  workInfo: WorkInfo[]
+  company: Company;
+  workInfo: WorkInfo[];
 }
 export const workExperiences: WorkExperience[] = [
   {
     company: {
-      name: 'Compile Oy',
+      name: "Compile Oy",
       logo: compile,
       text: (
         <>
@@ -45,23 +45,24 @@ export const workExperiences: WorkExperience[] = [
     },
     workInfo: [
       {
-        title: 'Software Specialist',
+        title: "Hands-on fullstack architect",
         text: (
           <>
             Working as a fullstack developer consultant for different clients.
             <br />
-            Configuring Azure and AWS cloud environments, using React with Typescript on
-            the frontend and building backend with Node services using Typescript. Experiencing GraphQL in
-            addition to traditional REST APIs.
+            Configuring Azure and AWS cloud environments, every day use of AI.
+            React with Typescript on the frontend and building backend with Node
+            services using Typescript. Experiencing GraphQL in addition to
+            traditional REST APIs.
           </>
         ),
-        duration: 'January 2021 - Present',
+        duration: "January 2021 - Present",
         techIconArray: [
-          'fab fa-js',
-          'fab fa-java',
-          'fab fa-react',
-          'fas fa-cloud',
-          'fab fa-node',
+          "fab fa-js",
+          "fab fa-java",
+          "fab fa-react",
+          "fas fa-cloud",
+          "fab fa-node",
         ],
         extraIcons: [graphql],
       },
@@ -69,7 +70,7 @@ export const workExperiences: WorkExperience[] = [
   },
   {
     company: {
-      name: 'Visma Consulting Oy',
+      name: "Visma Consulting Oy",
       logo: visma,
       text: (
         <>
@@ -81,7 +82,7 @@ export const workExperiences: WorkExperience[] = [
     },
     workInfo: [
       {
-        title: 'Software Designer',
+        title: "Software Designer",
         text: (
           <>
             Visma Consulting, Product Creation Services unit
@@ -95,20 +96,20 @@ export const workExperiences: WorkExperience[] = [
             SCSS, Liferay, Maven, SVN, Java.
           </>
         ),
-        duration: 'January 2019 - January 2021',
+        duration: "January 2019 - January 2021",
         techIconArray: [
-          'fab fa-js',
-          'fab fa-java',
-          'fab fa-angular',
-          'fas fa-cloud',
-          'fab fa-linux',
+          "fab fa-js",
+          "fab fa-java",
+          "fab fa-angular",
+          "fas fa-cloud",
+          "fab fa-linux",
         ],
       },
     ],
   },
   {
     company: {
-      name: 'Octo 3 Oy',
+      name: "Octo 3 Oy",
       logo: octo3,
       text: (
         <>
@@ -120,7 +121,7 @@ export const workExperiences: WorkExperience[] = [
     },
     workInfo: [
       {
-        title: 'Software Designer',
+        title: "Software Designer",
         text: (
           <>
             Front end development of a large scale ERP application. The work was
@@ -132,19 +133,19 @@ export const workExperiences: WorkExperience[] = [
             Azure environment configurations.
           </>
         ),
-        duration: 'October 2017 - December 2018',
+        duration: "October 2017 - December 2018",
         techIconArray: [
-          'fab fa-js',
-          'fab fa-angular',
-          'fas fa-cloud',
-          'fab fa-node',
+          "fab fa-js",
+          "fab fa-angular",
+          "fas fa-cloud",
+          "fab fa-node",
         ],
       },
     ],
   },
   {
     company: {
-      name: 'Zef Oy',
+      name: "Zef Oy",
       logo: zef,
       text: (
         <>
@@ -157,7 +158,7 @@ export const workExperiences: WorkExperience[] = [
     },
     workInfo: [
       {
-        title: 'Front End Engineer',
+        title: "Front End Engineer",
         text: (
           <>
             Web development and maintaining of a large scale survey tool
@@ -167,16 +168,16 @@ export const workExperiences: WorkExperience[] = [
             Platform with Firebase as the main database.
           </>
         ),
-        duration: 'January 2016 – September 2017',
+        duration: "January 2016 – September 2017",
         techIconArray: [
-          'fab fa-js',
-          'fab fa-angular',
-          'fas fa-cloud',
-          'fab fa-node',
+          "fab fa-js",
+          "fab fa-angular",
+          "fas fa-cloud",
+          "fab fa-node",
         ],
       },
       {
-        title: 'Mobile Development Expert',
+        title: "Mobile Development Expert",
         text: (
           <>
             Mobile development (Android, Java) and Master&apos;s Thesis for my
@@ -184,14 +185,14 @@ export const workExperiences: WorkExperience[] = [
             and evaluation of a customer service chat application&quot;.
           </>
         ),
-        duration: 'September 2014 – December 2015',
-        techIconArray: ['fab fa-java', 'fab fa-android', 'fas fa-mobile-alt'],
+        duration: "September 2014 – December 2015",
+        techIconArray: ["fab fa-java", "fab fa-android", "fas fa-mobile-alt"],
       },
     ],
   },
   {
     company: {
-      name: 'Vaisala Oyj',
+      name: "Vaisala Oyj",
       logo: vaisala,
       text: (
         <>
@@ -206,7 +207,7 @@ export const workExperiences: WorkExperience[] = [
     },
     workInfo: [
       {
-        title: 'Giant Leap Intern',
+        title: "Giant Leap Intern",
         text: (
           <>
             Mobile application closely related to weather radars to be used
@@ -214,9 +215,9 @@ export const workExperiences: WorkExperience[] = [
             XML
           </>
         ),
-        duration: 'May 2014 – August 2014',
-        techIconArray: ['fab fa-java', 'fab fa-android', 'fas fa-mobile-alt'],
+        duration: "May 2014 – August 2014",
+        techIconArray: ["fab fa-java", "fab fa-android", "fas fa-mobile-alt"],
       },
     ],
   },
-]
+];
