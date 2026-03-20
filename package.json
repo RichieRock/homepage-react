@@ -3,12 +3,13 @@
   "private": true,
   "version": "2.0.0",
   "type": "module",
+  "packageManager": "bun@1.1.43",
   "scripts": {
-    "dev": "yarn tailwindcss & vite",
-    "build": "yarn tailwindcss & tsc && vite build --outDir build",
+    "dev": "bun run tailwindcss & vite",
+    "build": "bun run tailwindcss & tsc && vite build --outDir build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "tailwindcss": "npx tailwindcss -i src/assets/styles/index.css -o src/assets/styles/tailwindoutput.css --watch"
+    "tailwindcss": "bunx tailwindcss -i src/assets/styles/index.css -o src/assets/styles/tailwindoutput.css --watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
@@ -23,13 +24,12 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-react": "^6.0.1",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    "vite": "^5"
+  }
 }
