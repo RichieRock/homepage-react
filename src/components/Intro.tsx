@@ -113,11 +113,11 @@ const IntroSection = () => {
                 <div className="flex flex-wrap justify-center">
                   <div className="w-full lg:w-9/12 px-4">
                     <p className="mb-4 text-lg leading-relaxed text-gray-800 dark:text-gray-300">
-                      Hands-on fullstackarchitect with a Master&apos;s degree in
-                      Computer Science and Engineering. Strong in Java,
-                      TypeScript, React and architectural design, and I use AI
-                      tools daily to speed up research, prototyping, and code
-                      quality.
+                      AI-experienced hands-on fullstack architect with a
+                      Master&apos;s degree in Computer Science and Engineering.
+                      Strong in Java, TypeScript, React and architectural
+                      design, and I use AI tools daily to speed up research,
+                      prototyping, and code quality.
                     </p>
                   </div>
                 </div>
