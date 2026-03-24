@@ -115,9 +115,15 @@ const IntroSection = () => {
                     <p className="mb-4 text-lg leading-relaxed text-gray-800 dark:text-gray-300">
                       AI-experienced hands-on fullstack architect with a
                       Master&apos;s degree in Computer Science and Engineering.
-                      Strong in Java, TypeScript, React and architectural
-                      design, and I use AI tools daily to speed up research,
-                      prototyping, and code quality.
+                      Strong in Java, Python, TypeScript, React and
+                      architectural design. AI-native development to speed up
+                      research, prototyping, and code quality. Deep
+                      understanding of software architecture, design patterns,
+                      and best practices. Passionate about building scalable and
+                      maintainable software solutions that meet business needs.
+                      Experienced in leading development teams and collaborating
+                      with cross-functional teams to deliver high-quality
+                      software products.
                     </p>
                   </div>
                 </div>
