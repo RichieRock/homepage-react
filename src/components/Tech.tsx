@@ -1,5 +1,5 @@
-import { experienceYears } from '../data/techExperiences'
-import { getYears } from '../util'
+import { experienceYears } from "../data/techExperiences";
+import { getYears } from "../util";
 
 const Tech = () => {
   return (
@@ -7,7 +7,7 @@ const Tech = () => {
       {/* 81px instead of h-20 (80px) to avoid sub-pixel gap between sections */}
       <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-[81px]"
-        style={{ transform: 'translateZ(0)' }}
+        style={{ transform: "translateZ(0)" }}
       >
         <svg
           className="absolute bottom-0 overflow-hidden"
@@ -32,9 +32,10 @@ const Tech = () => {
               Technology stack
             </h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500 dark:text-gray-400">
-              As a fullstack developer with focus on the frontend, my main
-              expertise lies in frontend frameworks but I&lsquo;m also very
-              fluent with Java, node.js and typescript on the backend
+              As a hands-on fullstack architect with strong AI experience, I
+              design scalable solutions end-to-end, combining frontend
+              excellence with deep backend expertise in Java, Node.js, and
+              TypeScript.
             </p>
           </div>
         </div>
@@ -90,18 +91,18 @@ const Tech = () => {
               {Math.max(
                 experienceYears.azure,
                 experienceYears.aws,
-                experienceYears.googlecloud
-              )}{' '}
+                experienceYears.googlecloud,
+              )}{" "}
               years
             </p>
           </div>
           <div className="w-full lg:w-3/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
-              <i className="fab fa-angular text-5xl"></i>
+              <i className="fab fa-python text-5xl"></i>
             </div>
-            <h6 className="text-xl mt-5 font-semibold text-white">Angular</h6>
+            <h6 className="text-xl mt-5 font-semibold text-white">Python</h6>
             <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
-              {getYears(experienceYears.angular, true)}
+              {getYears(experienceYears.python, true)}
             </p>
           </div>
         </div>
@@ -127,6 +128,17 @@ const Tech = () => {
             <h6 className="text-xl mt-5 font-semibold text-white">Scrum</h6>
             <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
               {getYears(experienceYears.scrum, true)}
+            </p>
+          </div>
+          <div className="w-full lg:w-3/12 px-4 text-center">
+            <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
+              <i className="fas fa-drafting-compass text-5xl"></i>
+            </div>
+            <h6 className="text-xl mt-5 font-semibold text-white">
+              Architecture
+            </h6>
+            <p className="mt-2 mb-4 text-gray-500 dark:text-gray-400">
+              {getYears(experienceYears.arch, true)}
             </p>
           </div>
         </div>
@@ -161,7 +173,7 @@ const Tech = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Tech
+export default Tech;

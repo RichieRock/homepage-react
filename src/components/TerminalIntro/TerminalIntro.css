@@ -1,0 +1,113 @@
+
+
+.terminal,
+.terminal:before,
+.terminal:after,
+.terminal p:after {
+  box-sizing: border-box;
+  position: relative;
+}
+.terminal {
+  height: 400px;
+  width: 100%;
+  padding: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.terminal:before {
+  content: none;
+}
+.terminal:after {
+  content: none;
+}
+
+.menu {
+  height: 26px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.menu:after {
+  content: "Intro";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.window-buttons {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.45);
+}
+
+.window-buttons.close {
+  background: #ff5f57;
+  border-color: #e14640;
+}
+
+.window-buttons.minimize {
+  background: #ffbd2f;
+  border-color: #dea123;
+}
+
+.window-buttons.zoom {
+  background: #28c840;
+  border-color: #1dad2f;
+}
+
+.screen {
+  height: calc(100% - 26px);
+  padding: 12px;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.code pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font: inherit;
+  text-align: left;
+}
+
+.prompt-line {
+  margin: 6px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+}
+
+.prompt-sign {
+  opacity: 0.8;
+}
+
+.cursor {
+  color: currentColor;
+  animation: terminal-cursor-blink 1s steps(1, end) infinite;
+}
+
+@keyframes terminal-cursor-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
