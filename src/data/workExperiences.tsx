@@ -48,12 +48,17 @@ export const workExperiences: WorkExperience[] = [
         title: "Hands-on fullstack architect",
         text: (
           <>
-            Working as a fullstack developer consultant for different clients.
+            Working as a hands-on fullstack architect and consultant for
+            multiple clients, owning technical direction from discovery to
+            production.
             <br />
-            Configuring Azure and AWS cloud environments, every day use of AI.
-            React with Typescript on the frontend and building backend with Node
-            services using Typescript. Experiencing GraphQL in addition to
-            traditional REST APIs.
+            Designing scalable cloud-native architectures on Azure and AWS,
+            while applying AI-driven development daily for faster research,
+            prototyping, implementation, and quality improvements.
+            <br />
+            Building modern React + TypeScript frontends and robust Node.js
+            TypeScript backends, with API design across both GraphQL and
+            traditional REST.
           </>
         ),
         duration: "January 2021 - Present",
@@ -63,6 +68,7 @@ export const workExperiences: WorkExperience[] = [
           "fab fa-react",
           "fas fa-cloud",
           "fab fa-node",
+          "fas fa-drafting-compass",
         ],
         extraIcons: [graphql],
       },
@@ -88,12 +94,13 @@ export const workExperiences: WorkExperience[] = [
             Visma Consulting, Product Creation Services unit
             <br />
             Visma bought Octo3 in 2017 and fully merged Octo3 into Visma from
-            the beginning of 2019.
+            the beginning of 2019. Later known as twoday.
             <br />
-            Fullstack development of digital services for big clients with main
-            focus on the front end. Using Azure on the cloud but also on-premise
-            services running on Linux. Technologies used: Angular 4+, HTML,
-            SCSS, Liferay, Maven, SVN, Java.
+            Fullstack development of large digital services with emphasis on
+            frontend architecture and maintainable implementation patterns.
+            Designing and delivering production systems in Azure and on-premise
+            Linux environments. Core technologies: Angular 4+, HTML, SCSS,
+            Liferay, Maven, SVN, Java.
           </>
         ),
         duration: "January 2019 - January 2021",
@@ -124,13 +131,14 @@ export const workExperiences: WorkExperience[] = [
         title: "Software Designer",
         text: (
           <>
-            Front end development of a large scale ERP application. The work was
-            mainly with Angularjs, HTML, CSS and Javascript technologies.
+            Frontend development of a large-scale ERP application with focus on
+            scalable UI architecture and long-term maintainability. The work was
+            mainly with AngularJS, HTML, CSS and JavaScript.
             <br />
             Development of an application to be used by many the sales personnel
-            to calculate offers to their clients. Work was done with reactjs,
-            HTML, SCSS, Typescript but also including Node.js development and
-            Azure environment configurations.
+            to calculate offers for clients. Work was done with React, HTML,
+            SCSS, TypeScript, including Node.js backend development and Azure
+            environment configuration.
           </>
         ),
         duration: "October 2017 - December 2018",

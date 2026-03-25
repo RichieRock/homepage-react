@@ -3,6 +3,7 @@ import Riku from "../assets/img/Riku.webp";
 
 import { experienceYears } from "../data/techExperiences";
 import { getYears, scrollTo } from "../util";
+import { TerminalIntro } from "./TerminalIntro/TerminalIntro";
 
 const IntroSection = () => {
   return (
@@ -38,7 +39,7 @@ const IntroSection = () => {
         </div>
       </section>
       <section className="relative py-16 bg-gray-300 dark:bg-gray-900">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="relative flex flex-col min-w-0 wrap-break-word bg-white dark:bg-gray-800 w-full mb-6 lg:mb-20 shadow-xl rounded-lg -mt-64">
             <div className="px-6">
               <div className="flex flex-wrap justify-center">
@@ -75,18 +76,18 @@ const IntroSection = () => {
                     </div>
                     <div className="mr-4 p-3 text-center">
                       <span className="text-xl font-bold block uppercase tracking-wide text-gray-700 dark:text-gray-200">
-                        {getYears(experienceYears.js)}
+                        {getYears(experienceYears.fe, "short")}
                       </span>
                       <span className="text-sm text-gray-500 dark:text-gray-400">
-                        Years of Javascript experience
+                        Years of frontend experience
                       </span>
                     </div>
                     <div className="lg:mr-4 p-3 text-center">
                       <span className="text-xl font-bold block uppercase tracking-wide text-gray-700 dark:text-gray-200">
-                        {getYears(experienceYears.react)}
+                        {getYears(experienceYears.be, "short")}
                       </span>
                       <span className="text-sm text-gray-500 dark:text-gray-400">
-                        Years of React experience
+                        Years of backend experience
                       </span>
                     </div>
                   </div>
@@ -112,13 +113,7 @@ const IntroSection = () => {
               <div className="mt-10 py-10 border-t border-gray-300 dark:border-gray-700 text-center">
                 <div className="flex flex-wrap justify-center">
                   <div className="w-full lg:w-9/12 px-4">
-                    <p className="mb-4 text-lg leading-relaxed text-gray-800 dark:text-gray-300">
-                      AI-experienced hands-on fullstack architect with a
-                      Master&apos;s degree in Computer Science and Engineering.
-                      Strong in Java, TypeScript, React and architectural
-                      design, and I use AI tools daily to speed up research,
-                      prototyping, and code quality.
-                    </p>
+                    <TerminalIntro />
                   </div>
                 </div>
               </div>
