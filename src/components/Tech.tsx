@@ -40,7 +40,7 @@ const Tech = () => {
           </div>
         </div>
         <div className="flex flex-wrap mt-12 justify-center">
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-js-square text-5xl"></i>
             </div>
@@ -51,7 +51,7 @@ const Tech = () => {
               {getYears(experienceYears.js, true)}
             </p>
           </div>
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-react text-5xl"></i>
             </div>
@@ -60,7 +60,7 @@ const Tech = () => {
               {getYears(experienceYears.react, true)}
             </p>
           </div>
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-java text-5xl"></i>
             </div>
@@ -69,9 +69,7 @@ const Tech = () => {
               {getYears(experienceYears.java, true)}
             </p>
           </div>
-        </div>
-        <div className="flex flex-wrap lg:mt-12 justify-center">
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-node text-5xl"></i>
             </div>
@@ -80,7 +78,7 @@ const Tech = () => {
               {getYears(experienceYears.node, true)}
             </p>
           </div>
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fas fa-cloud text-5xl"></i>
             </div>
@@ -96,7 +94,7 @@ const Tech = () => {
               years
             </p>
           </div>
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-python text-5xl"></i>
             </div>
@@ -112,7 +110,7 @@ const Tech = () => {
           </div>
         </div>
         <div className="flex flex-wrap mt-12 justify-center">
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-git text-5xl"></i>
             </div>
@@ -121,7 +119,7 @@ const Tech = () => {
               {getYears(experienceYears.git, true)}
             </p>
           </div>
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fas fa-circle-notch text-5xl"></i>
             </div>
@@ -130,7 +128,7 @@ const Tech = () => {
               {getYears(experienceYears.scrum, true)}
             </p>
           </div>
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fas fa-drafting-compass text-5xl"></i>
             </div>
@@ -141,9 +139,7 @@ const Tech = () => {
               {getYears(experienceYears.arch, true)}
             </p>
           </div>
-        </div>
-        <div className="flex flex-wrap lg:mt-12 justify-center">
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-windows text-5xl"></i>
             </div>
@@ -152,7 +148,7 @@ const Tech = () => {
               {getYears(experienceYears.windows, true)}
             </p>
           </div>
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-linux text-5xl"></i>
             </div>
@@ -161,7 +157,7 @@ const Tech = () => {
               {getYears(experienceYears.linux, true)}
             </p>
           </div>
-          <div className="w-full lg:w-3/12 px-4 text-center">
+          <div className="w-6/12 lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 px-4 text-center">
             <div className="p-3 w-12 h-12 inline-flex items-center justify-center text-white">
               <i className="fab fa-apple text-5xl"></i>
             </div>
