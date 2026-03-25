@@ -8,7 +8,7 @@
   position: relative;
 }
 .terminal {
-  height: 400px;
+  height: 440px;
   width: 100%;
   padding: 0;
   border-radius: 5px;
@@ -74,6 +74,7 @@
   font-size: 14px;
   line-height: 1.5;
   text-align: left;
+  overflow-y: auto;
 }
 
 .code pre {
@@ -89,10 +90,36 @@
   align-items: center;
   gap: 6px;
   color: inherit;
+  position: relative;
+  cursor: text;
 }
 
 .prompt-sign {
   opacity: 0.8;
+}
+
+.prompt-input-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.prompt-input-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.history-entry {
+  margin-top: 6px;
+}
+
+.history-output {
+  margin: 2px 0 0 20px;
 }
 
 .cursor {

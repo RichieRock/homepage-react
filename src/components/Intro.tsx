@@ -39,7 +39,7 @@ const IntroSection = () => {
         </div>
       </section>
       <section className="relative py-16 bg-gray-300 dark:bg-gray-900">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="relative flex flex-col min-w-0 wrap-break-word bg-white dark:bg-gray-800 w-full mb-6 lg:mb-20 shadow-xl rounded-lg -mt-64">
             <div className="px-6">
               <div className="flex flex-wrap justify-center">
