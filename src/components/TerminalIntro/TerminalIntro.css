@@ -134,6 +134,20 @@
   margin: 2px 0 0 20px;
 }
 
+.history-output-wrap {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.history-output-cv {
+  white-space: pre;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: block;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
 .cursor {
   color: currentColor;
   animation: terminal-cursor-blink 1s steps(1, end) infinite;

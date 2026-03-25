@@ -7,14 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const inputPath = path.resolve(__dirname, "../src/assets/cv.md");
 const outputPath = path.resolve(__dirname, "../src/assets/cv.txt");
-
-const TOP_BANNER = [
-  "+--------------------------------------------------------------------------------------------------+",
-  "|                                   RIKU KALLIO - CURRICULUM VITAE                                 |",
-  "|                              Software Architect | Hands-on Fullstack                             |",
-  "+--------------------------------------------------------------------------------------------------+",
-  "",
-].join("\n");
+const outputPathMobile = path.resolve(__dirname, "../src/assets/cv.mobile.txt");
 const BLOCK_ART = [
   "███████████████████████████████████████▓▒░░░  ░ ░  ░ ░░░ ░░░░░░░░░▒▓████████████████████████████████",
   "████████████████████████████████████▒░      ░░░     ░░░░░░░░░░░░░░░░░▒▒█████████████████████████████",
@@ -72,9 +65,65 @@ const BLOCK_ART = [
   "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░▒▒▒░░░░░░░░░ ░░░░░░▒▒▒▒█████████░  ░▒▓▓▓▒▓▓▒▒▒",
   "▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░░  ░░░░░░░░░░        ░░░░░░░░▒▓██████████▓     ░▒▒▒▒▒▒▒▒",
 ].join("\n");
+const BLOCK_ART_MOBILE = [
+  "███████████████████               ████████████████",
+  "████████████████     ▒▒██▒░░         █████████████",
+  "██████████████   ░▒█▓░    ░▒▒██████    ███████████",
+  "█████████████         ░████▓▓█▒         ██████████",
+  "████████████                             ██████▓▓ ",
+  "░▓█▓█████                 ░▓█████        ▓▒▒░░░░░ ",
+  "░░░░▒░▒░   ██░        ░▒█████████▒░              ",
+  "      ░▒   ███████▓███████████████░▒▒░           ",
+  "      ░░  ▓███████████████████▓████▒             ",
+  "▒▓▒▒▒▒▓█  █▓▓▒▓▓▓▒▓▒▓▒▒▒▒▓▓▓▓▓▒▓█▓█▓▓░░  ░▒░░░░░ ",
+  "░▓███████░ ▓░░░░▒░▒▒▓▒▓█████▓▒░░▒▒▒▓▓▓▒░   ████▓▒ ",
+  "▓█████████ ░░░░▒▓▓▓▒█▓█████▓▓██████▓██▒ ████  ███░",
+  "▓█████████░  ░░▓▓███▓▓▓████████████▒▓██▒██░█▒ ▓██▒",
+  "▒▓▓████████ ██████████▒▒░          ▒▓███▓   █████▒",
+  "▒█▓██████░░▒▒        ░░          ▒█████████ ░██▓▓░",
+  "▒▓▓▓▓▓▓▓█            ░██▓▒    ░███████▓▒▒▓▓█▒▓▓▓▓░",
+  "░▓▓██▓█▓███ ▓░       ████████████▓█▓▓▒░░░░████▓▓▓░",
+  "░▓▓▓▓██▓████▓███████░░███████████▓▓▒░░ ░▒▒█▒░▒▓▓▒░",
+  "░▓▓▓▓▓▓▓▓▓██▓ ▒▒▓██▒ ██████▓▓▓████▓▓▒▒░▒░ ▒▓▓▓▓▒▒░",
+  "░▒▒▒▒▒▓▓▓▓▓▓█  ░▒▓▓░▒▒███  ░░░░▒▓▓▓▒▒▒▓▒░░██▓▓▒▒▓░",
+  "▒▒▒▓▒▒▒▒▒▒▓██  ░▒░░      ▓████▒░░▒▒▒▒▓▓░░█▒▒▒▒▒▒ ",
+  "▓▓▒▒▒▒▓▒▒▓▓▒██  ░░█████▓████░ ░█▓▒░▒▓▓░ ▒▓▓▒▒▒▒▒ ",
+  "▒▒▒▒▒▒▒▒▒▒▒▓▓█▒ ░░           ░  ▒░░▒▓░  ▓▓▒▒▒▒▒░ ",
+  "▒▒▒▒▒▒▒▒▒▓▓▓▒▓█    ▒░░▒▒    ░▓▓▒▒▒█▒   ░█▒░▒░░░░ ",
+  "▒▒▒▒▒▒▒▒▒▓▓▓▒▒▓█         █████████░   ░ ██ █▒░░░ ",
+  "░░░░▒░▒▒▒▒▒▓▓▓▓███  ░███▓▓█████▓       ███ ▒█▓▒▒ ",
+  "                ░█░                ░█████       ",
+].join("\n");
 const BOX_TOTAL_WIDTH = 100;
-const BOX_INNER_WIDTH = BOX_TOTAL_WIDTH - 4;
+const BOX_TOTAL_WIDTH_MOBILE = 50;
 const H4_LABEL_PREFIX = "@@BOX_LABEL@@:";
+
+function getBoxInnerWidth(totalWidth: number): number {
+  return totalWidth - 4;
+}
+
+function centerText(text: string, width: number): string {
+  if (text.length >= width) {
+    return text.slice(0, width);
+  }
+
+  const leftPadding = Math.floor((width - text.length) / 2);
+  const rightPadding = width - text.length - leftPadding;
+  return `${" ".repeat(leftPadding)}${text}${" ".repeat(rightPadding)}`;
+}
+
+function createTopBanner(totalWidth: number): string {
+  const innerWidth = totalWidth - 2;
+  const borderLine = `+${"-".repeat(innerWidth)}+`;
+
+  return [
+    borderLine,
+    `|${centerText("RIKU KALLIO - CURRICULUM VITAE", innerWidth)}|`,
+    `|${centerText("Software Architect | Hands-on Fullstack", innerWidth)}|`,
+    borderLine,
+    "",
+  ].join("\n");
+}
 
 function convertInlineMarkdown(text: string): string {
   return text
@@ -149,8 +198,13 @@ function wrapText(text: string, width: number): string[] {
   return lines;
 }
 
-function createAsciiBox(lines: string[], label?: string): string[] {
-  const totalDashCount = BOX_TOTAL_WIDTH - 2;
+function createAsciiBox(
+  lines: string[],
+  totalWidth: number,
+  label?: string,
+): string[] {
+  const totalDashCount = totalWidth - 2;
+  const innerWidth = getBoxInnerWidth(totalWidth);
   const horizontal = "-".repeat(totalDashCount);
   const boxedLines = lines.length > 0 ? lines : [""];
 
@@ -169,7 +223,7 @@ function createAsciiBox(lines: string[], label?: string): string[] {
 
   return [
     topBorder,
-    ...boxedLines.map((line) => `| ${line.padEnd(BOX_INNER_WIDTH, " ")} |`),
+    ...boxedLines.map((line) => `| ${line.padEnd(innerWidth, " ")} |`),
     `'${horizontal}'`,
   ];
 }
@@ -199,16 +253,16 @@ function normalizeListLine(line: string): string {
   return line.trim().replace(/^\*\s+/, "- ");
 }
 
-function wrapListItem(line: string): string[] {
+function wrapListItem(line: string, innerWidth: number): string[] {
   const match = line.match(/^(\d+\.\s+|-\s+)(.*)$/);
 
   if (!match) {
-    return wrapText(line, BOX_INNER_WIDTH);
+    return wrapText(line, innerWidth);
   }
 
   const prefix = match[1];
   const text = match[2];
-  const wrapped = wrapText(text, BOX_INNER_WIDTH - prefix.length);
+  const wrapped = wrapText(text, innerWidth - prefix.length);
 
   if (wrapped.length === 0) {
     return [prefix.trimEnd()];
@@ -223,11 +277,12 @@ function wrapListItem(line: string): string[] {
   return lines;
 }
 
-function boxParagraphs(lines: string[]): string[] {
+function boxParagraphs(lines: string[], totalWidth: number): string[] {
   const output: string[] = [];
   let paragraphBuffer: string[] = [];
   let listBuffer: string[] = [];
   let pendingBoxLabel: string | undefined;
+  const innerWidth = getBoxInnerWidth(totalWidth);
 
   const flushParagraph = () => {
     if (paragraphBuffer.length === 0) {
@@ -254,7 +309,7 @@ function boxParagraphs(lines: string[]): string[] {
     }
 
     const wrappedLines = paragraphGroups.flatMap((group, index) => {
-      const groupLines = wrapText(group, BOX_INNER_WIDTH);
+      const groupLines = wrapText(group, innerWidth);
 
       if (index === 0) {
         return groupLines;
@@ -263,7 +318,7 @@ function boxParagraphs(lines: string[]): string[] {
       return ["", ...groupLines];
     });
 
-    output.push(...createAsciiBox(wrappedLines, pendingBoxLabel));
+    output.push(...createAsciiBox(wrappedLines, totalWidth, pendingBoxLabel));
     paragraphBuffer = [];
     pendingBoxLabel = undefined;
   };
@@ -273,8 +328,10 @@ function boxParagraphs(lines: string[]): string[] {
       return;
     }
 
-    const listLines = listBuffer.flatMap((line) => wrapListItem(line));
-    output.push(...createAsciiBox(listLines, pendingBoxLabel));
+    const listLines = listBuffer.flatMap((line) =>
+      wrapListItem(line, innerWidth),
+    );
+    output.push(...createAsciiBox(listLines, totalWidth, pendingBoxLabel));
     listBuffer = [];
     pendingBoxLabel = undefined;
   };
@@ -325,7 +382,13 @@ function boxParagraphs(lines: string[]): string[] {
   return output;
 }
 
-function convertMarkdownToText(markdown: string): string {
+function convertMarkdownToText(
+  markdown: string,
+  options: {
+    totalWidth: number;
+    blockArt: string;
+  },
+): string {
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
   const out: string[] = [];
   let isInKeyExperiencesList = false;
@@ -378,16 +441,28 @@ function convertMarkdownToText(markdown: string): string {
     out.push(convertInlineMarkdown(line));
   }
 
-  const boxed = boxParagraphs(out);
+  const boxed = boxParagraphs(out, options.totalWidth);
   const merged = boxed.join("\n").replace(/\n{4,}/g, "\n\n\n");
-  return `${TOP_BANNER}${BLOCK_ART}\n\n${merged}`.trimEnd() + "\n";
+  const topBanner = createTopBanner(options.totalWidth);
+  return `${topBanner}${options.blockArt}\n\n${merged}`.trimEnd() + "\n";
 }
 
 async function main(): Promise<void> {
   const markdown = await fs.readFile(inputPath, "utf8");
-  const output = convertMarkdownToText(markdown);
-  await fs.writeFile(outputPath, output, "utf8");
+  const desktopOutput = convertMarkdownToText(markdown, {
+    totalWidth: BOX_TOTAL_WIDTH,
+    blockArt: BLOCK_ART,
+  });
+  const mobileOutput = convertMarkdownToText(markdown, {
+    totalWidth: BOX_TOTAL_WIDTH_MOBILE,
+    blockArt: BLOCK_ART_MOBILE,
+  });
+
+  await fs.writeFile(outputPath, desktopOutput, "utf8");
+  await fs.writeFile(outputPathMobile, mobileOutput, "utf8");
+
   console.log(`Generated ${path.relative(process.cwd(), outputPath)}`);
+  console.log(`Generated ${path.relative(process.cwd(), outputPathMobile)}`);
 }
 
 main().catch((error: unknown) => {
