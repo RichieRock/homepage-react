@@ -1,0 +1,190 @@
+# Intro
+Software Architect & Hands-on Fullstack Developer
+Experienced senior Software Architect and hands-on Fullstack Developer with a Master's degree in Computer Science and Engineering. I design and evolve large-scale architectures, lead technical decision-making, and deliver production software across frontend, backend, and DevOps. Core technologies include Java, JavaScript, TypeScript, Python, and cloud platforms (Azure, AWS, GCP).
+
+I work with an AI-native engineering approach: using LLM assistants daily for architecture analysis, discovery, prototyping, implementation, and code quality improvements. I combine clear communication with practical execution, helping teams move faster while keeping systems reliable, maintainable, and easy to hand over.
+
+Job assignments have varied between smaller projects to large scale applications used by tens of thousands of users per month.
+
+## Key experiences:
+
+* Architecture design
+* AI and LLM-driven development (prompt engineering, context engineering, Claude Code, GitHub Copilot)
+* 15+ years of programming
+* 15+ years of Javascript experience
+* 10+ years of combined cloud experience (GCP, Azure, AWS)
+* 9+ years of React experience
+* 6 years of Python experience
+* 6 years of Typescript experience
+* 8 years of Docker, k8s experience
+* 6 years of Java (+Kotlin), Spring & Spring Boot experience
+* 5 years of noSQL experience (mongodb, dynamodb)
+* 5 years of SQL experience
+* Trained Go developer
+My portfolio: rikukallio.fi My linkedin: linkedin.com/in/rikukallio
+
+# Strengths
+
+Architecture leadership, Clear communication, Understanding customer needs, Facilitation (e.g. scrum master), Problem solving, Prioritization, AI-native delivery mindset. I am known as an easy-to-work-with consultant who aligns business, product, and engineering stakeholders around practical architecture decisions.
+
+## Feedback from a customer:
+* "Riku is actively taking initiatives when there are areas he can improve or help team to improve."
+* "Riku is very professional and is taking great care of the work. He is well appreciated by our whole Team."
+* "Excelled in communication, delivering value and demonstrated very good collaboration skills"
+
+# Experiences
+
+## Compile Oy Jan 2021 – Ongoing · 5 yrs 3 mos
+
+### Senior Software Engineer / Scrum master / Architect
+
+### Vaisala Oyj · Vaisala Compass Jan 2024 – Ongoing · 2 yrs 3 mos
+
+Architecture design, fullstack development, and DevOps maintenance for a large-scale microservice platform in renewable energy. The system ingests instrument data and uses algorithms to generate actionable customer value.
+
+As part of the development team, I drive service boundaries, integration patterns, and reliability-focused design decisions across a complex software landscape using the best practices. I work closely with customer representatives, product owners, and stakeholders to align technical direction with business priorities and delivery speed.
+
+Using AI and LLM assistants daily to accelerate implementation and quality. In addition, developed AI-powered Python algorithms to bring best quality for our customers.
+
+#### Tech
+MicroServices, REST, Jenkins/Hudson, AWS, Technical discussions, MongoDb, PostgreSQL, React.JS, Spring boot, Jest, ESLint, Machine Learning, JAVA, TypeScript, JavaScript, AWS CloudFormation, AWS X-Ray, SonarQube, SQL, Architectural design, Spring, Python
+
+### Lead Developer / Fullstack & Devops engineer
+
+### Konecranes Oyj · ESPEC 2.0 - Integrated sales tool
+
+Mar 2021 – Dec 2023 · 2 yrs 10 mos
+
+Development of ESPEC 2.0 Integrated sales tool. Work included implementing new features, rapidly responding to bug fixes and optimising functionality, for example backend response times with extensive database queries. Being in close contact with the client and understanding the business behind the functionality needs ensured our client in the best outcome.
+
+Using react in the frontend with Material UI and redux. I was responsible of updating the frontend packaging system from webpack into vite among other vital updates. Using Typescript written Azure functions in the backend. Writing unit tests in Jest. Used agile scrum development methods during development sprints.
+
+Implemeting interesting integrations into various systems (Teamcenter PLM, CRM, Fluidtopics, etc.). Extracting data from mongodb and modifying it to proper format and save it to SQL database for use in Power BI reporting. Receiving and sending data from the tool into and from other various APIs. Implementing complex logic behind the curtains, but easy to use UIs for our internal sales people to use. We managed our devops in azure devops using pipelines, repos, pull requests and more.
+
+Due to the nature of the job, I was also partly acting as an architect in designing the integrations.
+
+#### Tech
+TypeScript, MongoDb, ESLint, React.JS, Redux, Git, ES6, SQL, MS SQL Server, Docker, Kubernetes, Node.js, Webpack, Web Applications, JavaScript, REST, MicroServices, Azure, Frontend, Fullstack, Backend, Technical discussions, Serverless, DevOps, HTML, CSS, HTML5, Jest, JIRA, JSON API, npm, Shell Scripts, UI Design, Virtualbox, Terraform, CI/CD, Web Services, HTTP, JSX, Architectural design
+
+### Software Specialist
+
+### Pipevisu - A Pipedrive visualisation and consultant profile matching tool
+
+Jan 2021 – Mar 2021 · 3 mos
+
+Development of an internal tool for sales personnel used for management of consultant profiles, their CVs and experiences in order to match the best profiles to the client deals. Client and server both written in Typescript. Using React in frontend, GraphQL as interface between client and server with Apollo GraphQL platform and AWS DynamoDB as a noSQL database. This project follows the best practices of DynamoDB hosted at AWS, GraphQL and serverless framework.
+
+All data is in one database table and with intelligent architecture design of the indexes, all queries to the database are fast. GraphQL resolvers are implemented in a way that provides fast access to the data with minimal waiting time to the end user. Integration to Pipedrive api allows us to fetch data from Pipedrive and match it with the data in our own database.
+
+Localhost development runs DynamoDB in a docker container for easy setup. Using Gitlab CI to build and test code after each merge request. Using peer reviews to assure good code quality.
+
+#### Tech
+Amazon DynamoDB, GraphQL, React.JS, TypeScript, Serverless, MicroServices, AWS, Gitlab CI/CD, Jest, Web Applications, Fullstack, Webpack, Technical discussions, AWS CloudFormation, Node.js, ES6, HTML, Web Services, Git, Kubernetes, Docker
+## Visma Consulting Oy
+
+Nov 2018 – Jan 2021 · 2 yrs 3 mos
+
+### Fullstack developer
+
+### Visma eBS - Customer portal
+
+Feb 2019 – Jan 2021 · 2 yrs
+
+Working as a consultant, Fullstack developer and team lead for the majority of the project duration for a big client with more than 200 000 users. Using Visma eBS (e-Business Suite, https://www.vismaconsulting.fi/palvelut/sahkoinen-asiointi) as a base platform and tailoring it and developing new modules to match customer needs. Visma eBS consists of hundreds of smaller modules that can be either ebs modules that are used by all Visma Consulting clients, or modules that are only used by one client and are hence project specific. The modules can be core modules that are always within an ebs project or optional modules. All modules are built with maven and using Ansible to automate deployment of the modules.
+
+Authentication is handled by ubisecure's SSO utilising strong authentication by bank logins. The application is integrated to third party API that has tens of different endpoints implemented in a library module that we use to fetch, and manipulate user data and make other requests. Some data was stored in ebs database but the main user data resided in a third party database. The application consisted of multiple services: customer-app (including Liferay and all client modules, responsible of showing the frontend to the user), public-service (initial REST API exposed to the customer-app), domain (responsible of requesting data from database interfaces or dispatch requests to external APIs through libraries), handler-app (showing the frontend to the handlers), alfresco (saving the documents such as pdf versions of the forms), orbeon (handling the forms) and digisign (digital signing of documents). Each service would consist of multiple modules, such as an Angular application or a REST api with Java + Spring boot or a library implementation.
+
+Users could also send forms to handlers provided by the client. Forms used orbeon as a forms engine that allowed editing and saving the forms which then in turn would show up in the application to the end user to be filled. So called handlers, assigned by the client, would then handle the requests on another service and exchange messages between the end users. The application in production has had more than 12000 active users monthly.
+
+My work included but not limited to: discussing features with the client, making specs with the client and providing time estimations of features, implementing both frontend, backend and middleware of such features but also integrations to third party services via REST APIs. Used agile scrum development methods during development sprints.
+
+#### Tech
+REST, MariaDB, Spring, Angular, jQuery, Bootstrap, Apache, IntelliJ, JSON API, Liferay, Maven, CSS, Linux, Virtualbox, ​Vagrant, JAVA, Spring boot, Ansible, JIRA, JUnit, npm, TypeScript, JavaScript, HTML, Fullstack, Frontend, Backend, Web Applications, MicroServices, Webpack, Jenkins/Hudson, CircleCI, My SQL, Spring MVC, Jest, Docker
+### Front end developer
+
+### Visma Solutions · Offer Calculator
+
+Nov 2018 – Nov 2020 · 2 yrs
+
+Working as a consultant for another Visma company. Development of Offer Calculator. An application to be used by the sales personnel or even potential clients themselves to calculate offers of products.
+
+In this application users are prompted to choose service packages, the app gives suggestions based on choices and frontend generates an offer page with all the necessary info. The ready offer is then sent to the server to be saved in database and generated to a pdf. An email is sent to the sales personnel and pdf is ready to be downloaded.
+
+Frontend had three versions all separated by environment variables and each deployed to a separate App Service and respective urls. Both frontend and backend are deployed to Azure App Services and using PostgreSQL database in Azure. The project also included maintaining these App Services in Azure, for example creating an IP restriction.
+
+#### Tech
+Node.js, Angular, Azure, React.JS, HTML, CSS, TypeScript, PostgreSQL, .NET, REST, Git, Docker, Architectural design, Frontend, Web Applications, Redis
+## Octo3 Oy
+
+Oct 2017 – Nov 2018 · 1 yr 2 mos
+
+### Front end developer
+
+Oct 2017 – Nov 2018 · 1 yr 2 mos
+
+Front end developer consultant job for a client creating a large scale ERP application. Product is used by hundreds of Finnish accountanting companies to manage their billings and other accounting related matters. Frontend was done using AngularJS and bootstrap while backend was developed with .NET & C#. Development process utilised agile and scrum methods with close interaction between developers, product owner, designers and other team members.
+
+The biggest challenge in this project was to update frontend libraries to much newer versions after postponing version update for too long. Also fully understanding the context of the system and how the end users would use the system helped us to create the best user experience possible.
+#### Tech
+AngularJS, HTML, CSS, JavaScript, C#, REST, Technical discussions, Frontend, .NET, Bootstrap
+## ZEF Oy
+
+Sep 2014 – Sep 2017 · 3 yrs
+
+### Front End Engineer
+
+Jan 2016 – Sep 2017 · 1 yr 9 mos
+
+Web development and maintaining of an in-house large scale survey tool application that has patented survey methods. Earlier version of the frontend application was developed using enyojs. In mid 2016 we decided to do a full rewrite from scratch and we had the privilege to start a new project in mid 2016 when Angular 2 was still in beta version. On the Backend we used Java. Quickly Angular 2 got released and some of our developers, myself including attended Angular master class held by thoughtram.
+
+The survey tool consists of two parts: player and editor. Of these two, the editor is much more complex and where most of the development happened. Editor allows users to create surveys including but not limited to adding new questions, changing question types, reordering questions, defining possible answers and changing the looks of the survey. The player is showing the survey on a website as embedded or standalone version. In the new Angular powered app all data was saved to Google Firebase using fast resolved Observables and RxJS. Firebase events were used to trigger events and our software could then subscribe to those events to do several actions.
+
+The work was mainly with Angular2, TypeScript, JavaScript, HTML, CSS and other front end languages and tools. Work also included configuration, usage and knowledge of Google Cloud Platform with Firebase as the main database.
+
+#### Tech
+Angular, TypeScript, JavaScript, Node.js, HTML, CSS, Git, Cloud Firestore / Firebase, Google Cloud, Google Analytics, Robot Framework, Kubernetes, JAVA, Docker, Technical discussions, REST, Serverless, Event driven, Jest, npm, UI Design, Google 
+### Mobile Development Expert
+
+Sep 2014 – Dec 2015 · 1 yr 4 mos
+
+Mobile development (Android, Java) and Master's Thesis for my degree in University of Oulu on subject "Development process and evaluation of a customer service chat application".
+
+#### Tech
+JAVA, XML/XLST, Android
+
+## Vaisala Oyj
+May 2014 – Aug 2014 · 4 mos
+
+### Mobile developer
+May 2014 – Aug 2014 · 4 mos
+
+Mobile application closely related to weather radars to be used largely by meteorologists. Technologies used: Android sdk, Java and XML
+
+#### Tech
+Android, JAVA, XML/XLST, REST, Git
+
+# Educations
+
+### University of Oulu
+
+Master’s degree / diplomi-insinööri · Computer Science and Engineering
+
+2010 – 2015 · 5 yrs
+
+Computer Science And Engineering studies completed in University of Oulu. I studied in Faculty of Information Technology and Electrical Engineering ITEE many fields such as computer algorithms, programming, computer science and languages.
+
+Thesis Development process and evaluation of a customer service chat application was made for Zef Oy during 2015. The work consisted of developing an Android application using Android sdk, Java and XML, testing and evaluation of the application.
+
+# Certifications
+
+## Go (golang) training
+Bitbrewers
+
+May 2023 – May 2023
+
+https://bitbrewers.fi/
+
+## Trained Communicator
+Koodarikuiskaaja
+
+Jan 2023 – Jun 2023

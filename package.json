@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "tsc && vite build --outDir build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cv:txt": "bun scripts/cv-md-to-txt.ts"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
